@@ -14,7 +14,7 @@ stages:
   - job: Terraform_Apply
     displayName: 'Terraform Apply'
     pool:
-      name: 'self-hosted-agent-pool'
+      name: 'linux-hosted-agent'
     steps:
  
     # Not needed for hosted vm
@@ -25,7 +25,7 @@ stages:
     - task: DownloadSecureFile@1
       name: download_ssh_key
       inputs:
-        secureFile: 'id_rsa.pub'
+        secureFile: 'id_rsa.pub' #this is uploaded into the library
 
     - script: |
         echo "Copying SSH public key into Terraform module"

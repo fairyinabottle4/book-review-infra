@@ -1,4 +1,4 @@
-application_name               = "DevOps1-pm2"
+application_name               = "DevOps1-pm3"
 environment                    = "dev"
 location                       = "East Asia"
 admin_username                 = "azureuser"

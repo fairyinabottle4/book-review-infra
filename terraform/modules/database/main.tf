@@ -6,6 +6,19 @@ resource "azurerm_mysql_flexible_server" "mysql" {
   administrator_password = var.mysql_admin_password
   sku_name               = "B_Standard_B1ms"
   version                = "5.7"
+
+# 1. Storage Configuration
+  storage {
+    size_gb           = 20
+    iops              = 360 # Minimum suggested IOPS for 20GB
+    auto_grow_enabled = true
+  }
+
+  # 2. Backup Configuration
+  backup_retention_days = 7
+
+  # 3. Networking (Sets it up for Public Access)
+  public_network_access_enabled = true
 }
 
 resource "azurerm_mysql_flexible_database" "bookreviews_db" {

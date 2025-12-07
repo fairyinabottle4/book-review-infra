@@ -1,5 +1,5 @@
 # General Settings
-application_name = "DevOps-book-review"
+application_name = "DevOps-next-attempt"
 environment      = "dev"
 location         = "Australia East"
 

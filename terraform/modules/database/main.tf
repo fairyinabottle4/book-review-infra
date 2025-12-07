@@ -16,9 +16,6 @@ resource "azurerm_mysql_flexible_server" "mysql" {
 
   # 2. Backup Configuration
   backup_retention_days = 7
-
-  # 3. Networking (Sets it up for Public Access)
-  public_network_access_enabled = true
 }
 
 resource "azurerm_mysql_flexible_database" "bookreviews_db" {

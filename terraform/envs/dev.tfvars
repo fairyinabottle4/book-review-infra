@@ -1,6 +1,6 @@
-application_name               = "DevOps1-pm3"
+application_name               = "DevOps1-pm-final"
 environment                    = "dev"
-location                       = "East Asia"
+location                       = "southeastasia"
 admin_username                 = "azureuser"
 admin_password                 = "DevSecurePassword123!"
 mysql_admin_username           = "mysqladmin"
